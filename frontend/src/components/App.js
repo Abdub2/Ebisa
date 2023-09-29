@@ -1,11 +1,14 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
-import { Routes, Route } from "react-router-dom"
-import Login from '../pages/Login';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import NavBar from './NavBar';
+import SignUpForm from './SignUpForm';
+import LoginForm from './LoginForm'
+import Home from './Home';
 
 
-function App() {
+
+function App( ) {
   const [user, setUser] = useState(null)
 
   useEffect(() => {
@@ -15,18 +18,20 @@ function App() {
       }
     })
   }, [])
-  if(!user) return <Login onLogin={setUser}/>
+  // if(!user) return <SignUpForm onLogin={setUser}/>
 
   return (
     <>
-
-    <NavBar user= {user} setUser={setUser}/>
-
-    {/* <main>
-      <Routes>
-
-      </Routes>
-    </main> */}
+    <NavBar user={user} setUser={setUser}/>
+    <main>
+      <Router>
+        <Routes>
+          <Route exact path='/' element={<SignUpForm onLogin={setUser}/>}/>
+          <Route exact path ="/login" element={<LoginForm onLogin={setUser}/>}/>
+          <Route exact path ="/home" element={<Home />}/>
+        </Routes>
+      </Router>
+    </main>
 
     </>
 

@@ -11,12 +11,18 @@ function NavBar({ user, setUser }){
     }
 
     return (
-        <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="/">Ebisa</a>
-            <button onClick={handleLogoutClick}>
-                Logout
-            </button>
+        <nav className="navbar navbar-expan-lg bg-primary-subtle">
+        <div className=" container-fluid">
+            <a className="navbar-brand " href="/">Ebisa</a>
+            <ul className="navbar-nav">
+                {/* <li>
+                    <button className = "btn btn-outline-success me-2" onClick={handleLogoutClick}>
+                    Logout
+                    </button>
+                </li> */}
+            </ul>
+
+
         </div>
         </nav>
     )
