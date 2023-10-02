@@ -28,7 +28,7 @@ function App( ) {
         <Routes>
           <Route exact path='/' element={<SignUpForm onLogin={setUser}/>}/>
           <Route exact path ="/login" element={<LoginForm onLogin={setUser}/>}/>
-          <Route exact path ="/home" element={<Home />}/>
+          <Route exact path ="/home" element={<Home onLogin={setUser} />}/>
         </Routes>
       </Router>
     </main>
