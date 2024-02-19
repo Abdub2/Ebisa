@@ -35,6 +35,7 @@ function LoginForm({ onLogin }){
             <div className="login">
                 <form className="needs-validation" onSubmit={handleSubmit} >
                     <div className="form-group was-validated mb-2">
+                        <h1>Log In</h1>
                         <label htmlFor="email" className="form-label">Full Name</label>
                         <input required type="text"
                         className="form-control"

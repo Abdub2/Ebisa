@@ -5,6 +5,8 @@ import NavBar from './NavBar';
 import SignUpForm from './SignUpForm';
 import LoginForm from './LoginForm'
 import Home from './Home';
+import VIP from './VIP';
+import Classic from './Classic';
 
 
 
@@ -29,6 +31,8 @@ function App( ) {
           <Route exact path='/' element={<SignUpForm onLogin={setUser}/>}/>
           <Route exact path ="/login" element={<LoginForm onLogin={setUser}/>}/>
           <Route exact path ="/home" element={<Home onLogin={setUser} />}/>
+          <Route exact path = "/vip" element= {<VIP onLogin={setUser} />}/>
+          <Route exact path = "/classic" element={<Classic onLogin={setUser}/>}/>
         </Routes>
       </Router>
     </main>

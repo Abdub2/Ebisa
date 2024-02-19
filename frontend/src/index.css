@@ -22,6 +22,7 @@ code {
   border-radius: 5px;
   color:black;
   background-color: rgb(233, 238, 243);
+
 }
 .form-label{
   font-size: 20px;
@@ -33,4 +34,56 @@ code {
 .home{
   text-align: center;
 
+}
+.card{
+  float: left;
+  /* width: 200px; */
+  width: 38rem;
+  height: 700px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-right: 40px;
+  top: 100px;
+  left: 50px;
+
+}
+body{
+  /* background-image: url(components/Ebisa.jpeg); */
+  background-size:cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-color:#5B84B1FF;
+}
+.image{
+  float:right;
+
+}
+
+.form-container {
+  max-width: 400px;
+  margin: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 400px;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+input,
+textarea {
+  margin-bottom: 16px;
+  padding: 8px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
 }

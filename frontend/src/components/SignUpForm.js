@@ -43,6 +43,7 @@ function SignUpForm({ onLogin }){
             <div className="login">
                 <form className="needs-validation" onSubmit={handleSubmit}>
                     <div className="form-group was-validated mb-2">
+                        <h1>Sign Up</h1>
                         <label className="form-label">Full Name</label>
                         <input className="form-control"
                             type="text"
